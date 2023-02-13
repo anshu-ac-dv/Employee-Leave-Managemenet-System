@@ -9,7 +9,7 @@ form{
     border: 2px solid pink;
     background-color: red;
     border-radius: 10px 10px 10px 10px;
-    color:black;
+    color: white;
 }
 .input-group{
     margin: 10px 0px 10px 0px;
@@ -44,8 +44,8 @@ form{
 .input-group button{
     padding: 10px;
     font-size: 15px;
-    color: black;
-    background-color: rgb(0, 255, 136);
+    color: white;
+    background-color: rgb(115, 255, 0);
     cursor: pointer;
     border-radius: 3px;
 }

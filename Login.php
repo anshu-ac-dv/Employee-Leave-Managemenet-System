@@ -42,9 +42,6 @@
         <div class="input-group">
             <button type="submit" name="login">Login</button>
         </div>
-        <!-- <p>
-            You do have not any account? <a href="Register.php" style="text-decoration: none;">Register Now</a>
-        </p> -->
     </form>
 </body>
 </html>
