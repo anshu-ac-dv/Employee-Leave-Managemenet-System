@@ -11,10 +11,11 @@
         <?php
             include 'Header.php';
         ?>
+
         <?php
-            include 'Session.php';
+            include 'dbcon.php';
             if(isset($_POST['submit'])){
-                $fname = $_POST['name'];
+                $name = $_POST['name'];
                 $email = $_POST['email'];
                 $phone = $_POST['phone'];
                 $gander = $_POST['gander'];
@@ -33,7 +34,7 @@
             }
         ?>
 
-        <div class="form" action="UpdateProfile.php" method="post">
+        <form action="UpdateProfile.php" method="post">
             <div class="py-1 px-0 bg-black items-center">
                 <div class="bg-white">
                     <h4 class="flex justify-center p-3 text-[22px]">Update Your Profile</h4>
@@ -72,10 +73,10 @@
                         </div>
                     </div>
                     <div class="px-4 text-right py-2">
-                        <button class="h-10 w-32 rounded-sm shadow-md text-white text-[16px] hover:bg-green-700 bg-green-600" name="submit">Save</button>
+                        <button class="h-10 w-32 rounded-sm shadow-md text-white text-[16px] hover:bg-green-700 bg-green-600" type="submit" name="submit">Save</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
 </body>
 </html>
