@@ -12,10 +12,18 @@
         include 'Session.php';
         include 'Header.php';
         ?>
+        <?php
+      $sql = "SELECT * FROM users";
+      $r = mysqli_query($conn,$sql);
+    ?>
         <!-- <div class="alert alert-success alert-dismissible fade show container mt-3" role="alert">
             <strong>Welcome!</strong> You have successfully login.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div> -->
+        <?php
+          while($row=mysqli_fetch_assoc($r))
+          {
+          ?>
                 <section style="background-color: white;">
                     <div class="container mt-3 mb-3">
                         <div class="row">
@@ -26,7 +34,6 @@
                                 class="rounded-circle img-fluid" style="width: 150px;">
                                 <h5 class="my-3">John Smith</h5>
                                 <p class="text-muted mb-1">Full Stack Developer</p>
-                                <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
                             </div>
                             </div>
                             <div class="card shadow mb-2 mb-lg-0">
@@ -87,6 +94,9 @@
                                 </div>
                             </div>
                         </div>
+                        <?php
+          }
+          ?>
                         <div class="col-lg-8">
                             <div class="card shadow mb-2">
                             <div class="card-body">

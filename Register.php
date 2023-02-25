@@ -75,10 +75,9 @@
                     </div>
                     <div class="input-group">
                         <button type="submit" name="register">Register Now</button>
+                        <a href="AdminPanel.php">Go Back</a>
+                       
                     </div>
-                    <!-- <p>
-                        If you are already a member?<a href="login.php"> Login</a>
-                    </p> -->
         </form>
 </body>
 </html>
