@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="Welcome.css">
     <title>Admin Dashboard</title>
 </head>
+   
+<body>
     <?php
         include 'AdminSession.php';
     ?>
-<body>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+
 <div class="container">
 <section>
 	<div class="row">
@@ -27,12 +28,12 @@
                     <div class="row">
                         <div class="col-md-12">
                           <!-- dblue -->
-                          <a href="ViewUsers.php" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />View <span class="glyphicon glyphicon-eye-open"></span><br />Employee</a>
                           <a href="Register.php" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Add <span class="glyphicon glyphicon-plus green"></span><br />Employee</a>
-                          <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Edit <span class="glyphicon glyphicon-edit yellow"></span><br />Employee</a>
-                          <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Delete <span class="glyphicon glyphicon-minus red"></span><br />Employee</a>
-                          <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Employee<br />Reporting <span class="glyphicon glyphicon-signal"></span></a>
-                          <a href="#" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Employee<br />Database <span class="glyphicon glyphicon-book"></span></a>
+                          <a href="ViewUsers.php" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />View <span class="glyphicon glyphicon-eye-open"></span><br />Employee</a>
+                          <a href="Edit.php" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Edit <span class="glyphicon glyphicon-edit yellow"></span><br />Employee</a>
+                          <a href="Delete.php" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Delete <span class="glyphicon glyphicon-minus red"></span><br />Employee</a>
+                          <a href="Report.php" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Employee<br />Reporting <span class="glyphicon glyphicon-signal"></span></a>
+                          <a href="EmployeeDatabase.php" class="btn btn-dblue btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Employee<br />Database <span class="glyphicon glyphicon-book"></span></a>
                         </div>
                     </div>
                     <!-- <div class="row">
