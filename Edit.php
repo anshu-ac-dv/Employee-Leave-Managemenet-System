@@ -44,7 +44,7 @@
               <td><?php echo $row['Name'];?></td>
               <td><?php echo $row['Email'];?></td>
               <td><?php echo $row['Phone Number'];?></td>
-              <td><a href="upd.php?upd=<?php echo $row['Email'];?>" ><button type="button" class="btn btn-success">Update</button></a></td>
+              <td><a href="UpdateProfile.php?upd=<?php echo $row['Email'];?>" ><button type="button" class="btn btn-success">Update</button></a></td>
           </tr>
       <?php
           }

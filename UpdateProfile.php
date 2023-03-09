@@ -23,8 +23,10 @@
                 $city = $_POST['city'];
                 $state = $_POST['state'];
                 $pin = $_POST['pin'];
-                $sql = "INSERT INTO `update_user`(`Full Name`, `Email`, `Phone Number`, `Gander`, `Village`, `Distric`, `State`, `Pin Code`) VALUES ('$name','$email','$phone','$gander','$village','$city','$state','$pin')";
-                $r = mysqli_query($conn, $sql);
+                //$a = $_GET['upd'];
+                $sql = "UPDATE `users` SET `Village`='$village',`City`='$city,`State`='$state',`Pin Code`='$pin',`Name`='$name',`Email`='$email',`Phone Number`='$phone', WHERE name='$email'";
+                $r=mysqli_query($conn,$sql);
+                $row=mysqli_fetch_assoc($r);
                 if($r){
                     echo "Seccssefully Submit";
                 }

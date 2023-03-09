@@ -11,7 +11,6 @@
                 $sql = "SELECT * FROM users WHERE name='$a'";
                 $r=mysqli_query($conn,$sql);
                 $row=mysqli_fetch_assoc($r);
-
     ?>
         <form action="upde.php" method="post">
                 <h1>
@@ -21,7 +20,7 @@
                     <tr class="input-name">
                         <td>
                             <label>First Name</label>
-                            <input type="text" name="fname" value="<?php echo $row['Name']; ?>">
+                            <input type="text" name="fname">
                         </td>
                         <td>
                             <label>Last Name</label>
@@ -31,15 +30,15 @@
                 </table>
                     <div class="input-group">
                         <label>Email</label>
-                        <input type="email" name="username" value="<?php echo $row['Email']; ?> ">
+                        <input type="email" name="username">
                     </div>
                     <div class="input-group">
                         <label>Phone Number</label>
-                        <input type="number" name="number" value="<?php echo $row['Phone number']; ?>">
+                        <input type="number" name="phone">
                     </div>
                     <div class="input-group">
                         <label>Date of Birth</label>
-                        <input type="date" name="date" value="<?php echo $row['Date']; ?>">
+                        <input type="date" name="date">
                     </div>
                     <div class="input-group mt-4">
                         <button type="submit" name="ok">Update</button>
